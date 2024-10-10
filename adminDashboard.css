@@ -1,0 +1,210 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: white;
+    background-image: url('n5.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns the container at the top with some space */
+    color: #333;
+}
+
+/* Container for the form */
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 50px; /* Adds some gap between the top of the screen and the container */
+    padding: 30px;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0 2px 40px #b92c48;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 3.1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #b92c48; /* Adds a background color to the header */
+    color: white;
+    padding: 15px; /* Adds padding to make it stand out */
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #34495e;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background: #b92c48; /* Adds a background color to make it pop */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Form styling */
+.form-container {
+    margin: 0 0 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+label {
+    font-size: 1.3rem;
+    color: rgb(48, 46, 46);
+    font-weight: 600;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ecf0f1;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Input focus effect */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Textarea styling */
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #b92c48;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: grey;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Button active effect */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .center-box {
+        width: 300px;
+    }
+    
+    .admin-button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    /* Adjust header font size */
+    header {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    nav a {
+        padding: 8px 15px; /* Smaller padding for links */
+        font-size: 14px; /* Font size for links */
+    }
+
+    header {
+        padding: 15px 0; /* Less padding for header */
+    }
+
+    main {
+        padding: 15px; /* Less padding for main content */
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem; /* Even smaller font size for extra small devices */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Minimal padding for links */
+        font-size: 12px; /* Font size for links */
+    }
+
+    main {
+        padding: 10px; /* Minimal padding for main content */
+    }
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product</title>
+    <link rel="stylesheet" href="updateForm.css"> <!-- Link to your CSS file -->
+    <script src="updateForm.js" defer></script> <!-- Link to your JS file -->
+</head>
+<body>
+    <h1>Update Product</h1>
+    <form id="updateForm" enctype="multipart/form-data">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+
+        <label for="price">Price:</label>
+        <input type="number" step="0.01" id="price" required>
+
+        <label for="cat_id">Category ID:</label>
+        <input type="text" id="cat_id" required>
+
+        <!-- New Image Upload Field -->
+        <label for="imageFile">Upload Image:</label>
+        <input type="file" id="imageFile" accept="image/*">
+
+        <button type="submit">Update Product</button>
+    </form>
+</body>
+</html>
+

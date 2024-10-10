@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox to center the box */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgb(173, 171, 163);
+    background-image: url('o1.jpg'); /* Path to your image */
+    background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Center container styling */
+.center-box {
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 40px #b92c48;
+    text-align: center;
+    width: 350px;
+}
+/* Heading styling */
+.center-box h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Dynamic message box styling */
+#message-box {
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 8px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+/* Button container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Button styling */
+.admin-button {
+    padding: 20px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.admin-button:hover {
+    background-color: #b92c48;
+}
+/* Heading and text */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/* Buttons styling */
+.buttons-container button {
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin: 10px;
+    background-color:transparent;
+    box-shadow: 0 8px 40px #b92c48;
+    border-radius: 10px;
+    width: 300px;
+    color: black;
+    border: none;
+    border-radius: 95px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow initially */
+}
+
+/* Button hover effect */
+.buttons-container button:hover {
+    background-color: #b92c48; /* Darker background color on hover */
+    transform: translateY(-5px) scale(1.05); /* Moves button up and scales it */
+    box-shadow: 0 8px 40px #b92c48; /* More pronounced shadow on hover */
+}
+
+/* Button active (click) effect */
+.buttons-container button:active {
+    transform: translateY(0) scale(1); /* Reset scaling on click */
+    box-shadow: 0 8px 40px #b92c48; /* Back to original shadow */
+}
+
+/* Image container */
+.img-container {
+    
+    margin-left: 40px;
+    width: 40   20%;
+    max-width: 500px;
+}
+
+.img-container img {
+    align-items: right  ;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 8px 40px #b92c48;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .center-box {
+        width: 300px;
+    }
+    
+    .admin-button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    /* Adjust header font size */
+    header {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    nav a {
+        padding: 8px 15px; /* Smaller padding for links */
+        font-size: 14px; /* Font size for links */
+    }
+
+    header {
+        padding: 15px 0; /* Less padding for header */
+    }
+
+    main {
+        padding: 15px; /* Less padding for main content */
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem; /* Even smaller font size for extra small devices */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Minimal padding for links */
+        font-size: 12px; /* Font size for links */
+    }
+
+    main {
+        padding: 10px; /* Minimal padding for main content */
+    }
+}

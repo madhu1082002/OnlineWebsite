@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+header {
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Product table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #b92c48;
+    color: white;
+}
+
+/* Controls layout */
+.controls {
+    display: flex;
+    justify-content: space-between; /* Space out controls */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px;
+}
+
+.entries-container {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center; /* Center label and select vertically */
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #b92c48;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Label styling for the dropdown */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Styling for the dropdown boxes */
+select {
+    height: 40px; /* Set a height similar to your input fields */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 10px; /* Add padding for better appearance */
+    font-size: 16px; /* Match font size with inputs */
+}
+
+/* Additional styles for the entries per page dropdown */
+select#entriesPerPage {
+    padding: 5px;
+    cursor: pointer;
+}
+
+select#entriesPerPage:focus {
+    border-color: #b92c48;
+    background-color: #fff;
+    
+box-shadow: 0 2px 40px #b92c48;
+}
+
+select#entriesPerPage:hover {
+    background-color: #e6e6e6;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .center-box {
+        width: 300px;
+    }
+    
+    .admin-button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    /* Adjust header font size */
+    header {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    nav a {
+        padding: 8px 15px; /* Smaller padding for links */
+        font-size: 14px; /* Font size for links */
+    }
+
+    header {
+        padding: 15px 0; /* Less padding for header */
+    }
+
+    main {
+        padding: 15px; /* Less padding for main content */
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem; /* Even smaller font size for extra small devices */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Minimal padding for links */
+        font-size: 12px; /* Font size for links */
+    }
+
+    main {
+        padding: 10px; /* Minimal padding for main content */
+    }
+}

@@ -1,0 +1,236 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.top-banner {
+    background-color: #b92c48;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #333;
+    font-size: 20px;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.1em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: white;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #b92c48;
+}
+
+nav ul li a i {
+    margin-left: 5px;
+}
+
+.fa-shopping-cart {
+    color: #b92c48;
+}
+
+.fa-heart {
+    color: #b92c48;
+}
+
+
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #333;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.footer-column button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.footer-column button i {
+    font-size: 18px;
+}
+
+.footer-column .social-icons {
+    margin-top: 20px;
+}
+
+.footer-column .social-icons a {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer-column .social-icons a:hover {
+    color: #555;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-bottom p {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .center-box {
+        width: 300px;
+    }
+    
+    .admin-button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    /* Adjust header font size */
+    header {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    nav a {
+        padding: 8px 15px; /* Smaller padding for links */
+        font-size: 14px; /* Font size for links */
+    }
+
+    header {
+        padding: 15px 0; /* Less padding for header */
+    }
+
+    main {
+        padding: 15px; /* Less padding for main content */
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem; /* Even smaller font size for extra small devices */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Minimal padding for links */
+        font-size: 12px; /* Font size for links */
+    }
+
+    main {
+        padding: 10px; /* Minimal padding for main content */
+    }
+}

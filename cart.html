@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Your Cart</h1>
+        </div>
+        <div class="header-right">
+            <i class="fas fa-shopping-cart" style="font-size: 40px;"></i>
+            <span id="cartCounter">0</span> <!-- Cart counter -->
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cart-container">
+            <div id="cartItemList"></div>
+            <div id="cartSummary">
+                <h2>Cart Summary</h2>
+                <textarea id="orderNote" placeholder="Order note"></textarea>
+                <p id="totalPrice">Subtotal: ₹0.00</p>
+                <p>(incl. all of taxes)</p>
+
+                <!-- Apply Coupon Section -->
+                <div class="apply-coupon">
+                    <input type="text" id="couponCode" placeholder="Enter coupon code">
+                    <button id="applyCouponBtn">Apply Coupon</button>
+                    <p id="couponMessage"></p>
+                </div>
+
+                <!-- Credit Limit Section -->
+                <div class="credit-limit">
+                    <input type="number" id="creditLimit" placeholder="Use credit limit" min="0" step="100">
+                    <button id="applyCreditBtn">Apply Credit</button>
+                    <p id="creditMessage"></p>
+                </div>
+
+                <button id="checkoutBtn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

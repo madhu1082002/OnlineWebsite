@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    background-image: url('n14.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 200;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color:#b92c48;
+}
+
+button {
+    padding: 12px;
+    background-color: #b92c48;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b92c48;
+}
+
+.form-message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #b92c48;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .center-box {
+        width: 300px;
+    }
+    
+    .admin-button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    /* Adjust header font size */
+    header {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    nav a {
+        padding: 8px 15px; /* Smaller padding for links */
+        font-size: 14px; /* Font size for links */
+    }
+
+    header {
+        padding: 15px 0; /* Less padding for header */
+    }
+
+    main {
+        padding: 15px; /* Less padding for main content */
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem; /* Even smaller font size for extra small devices */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Minimal padding for links */
+        font-size: 12px; /* Font size for links */
+    }
+
+    main {
+        padding: 10px; /* Minimal padding for main content */
+    }
+}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', 'Montserrat' ;
+}
+
+body {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    background-image: url('n8.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+element.style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+header {
+    
+    height: 100px; 
+    background-color: transparent; /* Header background */
+    color: #b92c48; /* Header text color */
+}
+
+header img {
+    height: 1px; /* Consistent height for logos */
+    max-width: fit-content;
+}
+
+.header-text {
+
+    
+    text-align: center;
+    color: #b92c48 ;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.slider-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent; /* Red color for slider background */
+}
+
+.slider-container p {
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: black; /* Text color in slider */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Padding for spacing */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+.form-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 40px #b92c48;
+    width: 300px;
+}
+label {
+    font-weight: bold;
+    color: black    ;
+}
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+button {
+    width: 100%;
+    background-color: rgb(173, 171, 163);
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: rgb(136, 79, 79); /* Darker background color on hover */
+    transform: translateY(-5px) scale(1.05); /* Moves button up and scales it */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    transform: translateY(0) scale(1); /* Reset scaling on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Back to original shadow */
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: black;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .center-box {
+        width: 300px;
+    }
+    
+    .admin-button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    /* Adjust header font size */
+    header {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    nav a {
+        padding: 8px 15px; /* Smaller padding for links */
+        font-size: 14px; /* Font size for links */
+    }
+
+    header {
+        padding: 15px 0; /* Less padding for header */
+    }
+
+    main {
+        padding: 15px; /* Less padding for main content */
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem; /* Even smaller font size for extra small devices */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Minimal padding for links */
+        font-size: 12px; /* Font size for links */
+    }
+
+    main {
+        padding: 10px; /* Minimal padding for main content */
+    }
+}
+

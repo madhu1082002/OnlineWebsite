@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="adminChoice.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="center-box">
+        <h1>WHATS UP!</h1>
+        
+        <!-- Dynamic message box for lighting messages -->
+        <div id="message-box">
+            Hover over the buttons to see more details!
+        </div>
+
+        <div class="buttons-container">
+            <button class="admin-button" 
+                    onmouseover="showMessage('Add new commodities to the inventory.')"
+                    onmouseout="clearMessage()"
+                    onclick="location.href='adminDashboard.html'">
+                ADD COMMODITIES
+            </button>
+
+            <button class="admin-button" 
+                    onmouseover="showMessage('View all commodities available in the store.')"
+                    onmouseout="clearMessage()"
+                    onclick="location.href='View.html'">
+                VIEW COMMODITIES
+            </button>
+
+            <button class="admin-button" 
+                    onmouseover="showMessage('Update the details of the existing commodities.')"
+                    onmouseout="clearMessage()"
+                    onclick="location.href='updateProduct.html'">
+                UPDATE COMMODITIES
+            </button>
+
+            <button class="admin-button" 
+                    onmouseover="showMessage('Update customer details such as credit limits or contact information.')"
+                    onmouseout="clearMessage()"
+                    onclick="location.href='updateCustomer.html'">
+                UPDATE CUSTOMER
+            </button>
+
+            <button class="admin-button" 
+                    onmouseover="showMessage('Remove commodities from the inventory.')"
+                    onmouseout="clearMessage()"
+                    onclick="location.href='deleteProduct.html'">
+                REMOVE COMMODITIES
+            </button>
+
+            <button class="admin-button" 
+                    onmouseover="showMessage('Remove customers from the system.')"
+                    onmouseout="clearMessage()"
+                    onclick="location.href='deleteCustomer.html'">
+                REMOVE CUSTOMER
+            </button>
+    </div>
+</div>
+
+
+</body>
+</html>

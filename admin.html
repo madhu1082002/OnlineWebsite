@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header style="display: flex; flex-direction:column; align-items: center; padding: 10px;">
+        <!-- Left: Header Logo Image -->
+        <img src="header_logo.png" alt="Header Logo" style="height: 150px"; style="image-orientation:from-image"; >
+
+    <!-- Center: Welcome Text -->
+    <p class="header-text" style="--textColor: #FFF; --desktopFontSize: 1.25rem; --mobileFontSize: 0.875rem; --fontSize: 1.25rem; --fontWeight: 700; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        Welcome to Joker and Witch! Trusted by 1 Million+ Happy&nbsp;Customers.
+    </p>
+
+
+    <!-- Slider Section -->
+    <section class="slider-container svelte-14asrc7" style="display: flex; justify-content: center; padding: 10px;">
+        <p style="animation: sliderAnimation 6s infinite;">
+            Zero Subscription fee! Lowest price guarantee! Unlock Superior Discounts
+        </p>
+    </section>
+    
+    <div class="form-container">
+    <h2>Admin Login</h2>
+    <form id="adminLoginForm">
+        <label for="email" >Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter the email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter the password">
+        <button type="button" onclick=validateAdmin()>Login</button>
+    </form>
+    <p id="errorMessage" style="color:red;"></p>
+    
+    </div>
+    <script src="admin.js"></script>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js"></script>
+
+</body>
+</html>
+
